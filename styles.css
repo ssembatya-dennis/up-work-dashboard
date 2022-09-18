@@ -1,0 +1,106 @@
+:root {
+  --color-grey-light: #eee;
+  --color-white: #fff;
+  --color-primary: #1cd863;
+  --color-Bg-dark: #17171a;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #777;
+  box-sizing: inherit;
+  padding: 5px;
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+}
+
+.header__title {
+  display: flex;
+  gap: 4rem;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.header__label {
+  font-weight: bold;
+  font-size: 32px;
+  color: #000;
+}
+
+.header__select {
+  width: 34rem;
+  height: 4rem;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding-left: 2rem;
+}
+
+.sales__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2.6rem;
+}
+
+.sales__item {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 25rem;
+  gap: 1rem;
+  align-items: flex-start;
+  background-color: var(--color-Bg-dark);
+  box-shadow: 5px 10px 15px rgba(4, 12, 24, 1);
+  padding: 1rem;
+}
+
+.sales_board {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+  width: 100%;
+}
+
+.sales-board__avatar {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.btn {
+  display: inline-block;
+  width: 10rem;
+  height: 3rem;
+  padding: 6px 4px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #333;
+  background-color: rgba(31, 26, 26, 0.705);
+}
+
+.cta {
+  display: flex;
+  margin-top: 1.4rem;
+  gap: 2rem;
+}
